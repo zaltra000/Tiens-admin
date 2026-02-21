@@ -13,7 +13,7 @@ export default function InquiryView() {
     message: ""
   });
 
-  const whatsappNumber = "249126284069";
+  const whatsappNumber = "249908335222";
   const facebookUrl = "https://www.facebook.com/share/1DuXR3qVBi/";
 
   const handleWhatsAppSubmit = (e: MouseEvent<HTMLButtonElement>) => {

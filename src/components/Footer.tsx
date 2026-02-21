@@ -3,7 +3,7 @@ import { Facebook, Globe } from "lucide-react";
 
 export default function Footer() {
   const { t } = useTranslation();
-  const whatsappNumber = "249126284069";
+  const whatsappNumber = "249908335222";
 
   return (
     <footer className="bg-white dark:bg-zinc-950 border-t border-gray-100 dark:border-zinc-800/50 py-8 px-4 pb-24 text-center transition-colors duration-500">

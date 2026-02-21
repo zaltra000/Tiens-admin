@@ -113,7 +113,7 @@ export default function ShopView() {
         const text = `New Order from Tiens Sudan App / طلب جديد من تطبيق تينز بالسودان${newline}${newline}Items / المنتجات:${newline}${itemsText}${newline}${newline}Total Items / إجمالي عدد المنتجات: ${cartTotalItems}${totalValueText}`;
 
         if (platform === "whatsapp") {
-            const whatsappNumber = "249126284069";
+            const whatsappNumber = "249908335222";
             const url = `https://wa.me/${whatsappNumber}?text=${text}`;
             window.open(url, '_blank');
         } else {
