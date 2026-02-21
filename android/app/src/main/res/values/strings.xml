@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">tiens-sudan</string>
+    <string name="title_activity_main">tiens-sudan</string>
+    <string name="package_name">com.tiens.sudan.app</string>
+    <string name="custom_url_scheme">com.tiens.sudan.app</string>
+</resources>
