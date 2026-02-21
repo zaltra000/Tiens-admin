@@ -109,8 +109,8 @@ export default function ShopView() {
             return `- ${item.quantity}x ${item.product.name} ${priceText}`;
         }).join(newline);
 
-        const totalValueText = cartTotalValue > 0 ? `${newline}*Total Price / إجمالي السعر:* ${cartTotalValue.toLocaleString()} ${t("sdg")}` : '';
-        const text = `*New Order from Tiens Sudan App / طلب جديد من تطبيق تينز بالسودان*${newline}${newline}*Items / المنتجات:*${newline}${itemsText}${newline}${newline}*Total Items / إجمالي عدد المنتجات:* ${cartTotalItems}${totalValueText}`;
+        const totalValueText = cartTotalValue > 0 ? `${newline}Total Price / إجمالي السعر: ${cartTotalValue.toLocaleString()} ${t("sdg")}` : '';
+        const text = `New Order from Tiens Sudan App / طلب جديد من تطبيق تينز بالسودان${newline}${newline}Items / المنتجات:${newline}${itemsText}${newline}${newline}Total Items / إجمالي عدد المنتجات: ${cartTotalItems}${totalValueText}`;
 
         if (platform === "whatsapp") {
             const whatsappNumber = "249126284069";

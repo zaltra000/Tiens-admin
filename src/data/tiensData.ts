@@ -34,7 +34,7 @@ export const tiensData = {
           fullDescription: "هذا المنتج معالج بشكل أساسي من مسحوق السبيرولينا المجفف. أثبتت التجارب الوظيفية أن هذا المنتج يمكن أن يساعد في تحسين مقاومة نقص الأكسجة وتنظيم جهاز المناعة الخلوي.",
           ingredients: "مسحوق السبيرولينا المجفف، غلاف الكبسولة: الجيلاتين.",
           recommendedPortion: "كبسولتان مرتين إلى ثلاث مرات يوميًا، مع شرب كوب من الماء في كل مرة.",
-          disclaimer: "*المكملات الغذائية ليست أدوية ولا يمكن استخدامها كبديل لعلاج الأمراض.",
+          disclaimer: "المكملات الغذائية ليست بديلاً عن الأدوية، ولكن يمكن استخدامها كمساعد طبيعي فعّال إلى جانب العلاج الطبي لتعزيز صحتك.",
           available: true,
           image: "/image/أغذية صحية/كبسولات سبيرولينا من تيانز.png"
         },
@@ -46,7 +46,7 @@ export const tiensData = {
           ingredients: "مسحوق حليب كامل الدسم، فوسفات الكالسيوم، ألياف ذرة، كريم غير اعتيادي للفيتامينات، الزنك.",
           recommendedPortion: "كيس واحد يذاب في 120 مل من الماء الدافئ أو الحليب ويخلط جيدًا.",
           netContent: "10 جم × 10 أكياس",
-          disclaimer: "*المكملات الغذائية ليست أدوية ولا يمكن استخدامها كبديل لعلاج الأمراض.",
+          disclaimer: "المكملات الغذائية ليست بديلاً عن الأدوية، ولكن يمكن استخدامها كمساعد طبيعي فعّال إلى جانب العلاج الطبي لتعزيز صحتك.",
           available: true,
           image: "/image/أغذية صحية/مسحوق الكالسيوم الفائق للأطفال.png"
         },
@@ -56,7 +56,7 @@ export const tiensData = {
           desc: "تدعم صحة العظام والجهاز العصبي، تساعد في الوقاية من هشاشة العظام وتعزز وظائف المخ.",
           fullDescription: "معالج من مسحوق كالسيوم العظام، الليسيثين، التورين، وفيتامينات بي. أثبتت التجارب فعاليته في تحسين الذاكرة ودعم وظائف الدماغ بفعالية فائقة.",
           recommendedPortion: "3 كبسولات يوميًا.",
-          disclaimer: "*المكملات الغذائية ليست أدوية ولا يمكن استخدامها كبديل لعلاج الأمراض.",
+          disclaimer: "المكملات الغذائية ليست بديلاً عن الأدوية، ولكن يمكن استخدامها كمساعد طبيعي فعّال إلى جانب العلاج الطبي لتعزيز صحتك.",
           available: false,
           image: "/image/أغذية صحية/كبسولات تيانز سوبر كالسيوم مع الليسيثين.png"
         },
@@ -68,7 +68,7 @@ export const tiensData = {
           ingredients: "التحلل الأنزيمي لمسحوق كالسيوم العظام، سكريات الأيزومالت، مسحوق الحليب خالي الدسم، فيتامين A، D، C، الحديد.",
           recommendedPortion: "اشرب كيساً واحداً، مرة إلى مرتين يومياً.",
           netContent: "230 جم",
-          disclaimer: "*المكملات الغذائية ليست أدوية ولا يمكن استخدامها كبديل لعلاج الأمراض.",
+          disclaimer: "المكملات الغذائية ليست بديلاً عن الأدوية، ولكن يمكن استخدامها كمساعد طبيعي فعّال إلى جانب العلاج الطبي لتعزيز صحتك.",
           available: false,
           image: "/image/أغذية صحية/مسحوق الكالسيوم المغذي الفائق.png"
         },
@@ -79,7 +79,7 @@ export const tiensData = {
           fullDescription: "مستخلص بشكل أساسي من لاكتات الزنك، الجلوكوز، ومسحوق بياض البيض. ممتاز للمساعدة كمكمل قوي للزنك.",
           ingredients: "جلوكوز لامائي، جيلاتين بقري، بياض البيض، بيسجليسينات الزنك.",
           recommendedPortion: "2 إلى 4 كبسولات يومياً بعد الوجبات.",
-          disclaimer: "*المكملات الغذائية ليست أدوية ولا يمكن استخدامها كبديل لعلاج الأمراض.",
+          disclaimer: "المكملات الغذائية ليست بديلاً عن الأدوية، ولكن يمكن استخدامها كمساعد طبيعي فعّال إلى جانب العلاج الطبي لتعزيز صحتك.",
           available: true,
           image: "/image/أغذية صحية/كبسولات الزنك.png"
         },
@@ -90,7 +90,7 @@ export const tiensData = {
           fullDescription: "معالج بشكل رئيسي من الكيتوزان. أثبتت التجارب قدرته على تطوير نظام مناعي سليم بالإضافة للتنقية.",
           ingredients: "كيتوزان (من صدف القشريات الحمراء)، غلاف الكبسولة.",
           recommendedPortion: "كبسولتان مرتين يوميا، قبل 30-60 دقيقة من الوجبة.",
-          disclaimer: "*المكملات الغذائية ليست أدوية ولا يمكن استخدامها كبديل لعلاج الأمراض.",
+          disclaimer: "المكملات الغذائية ليست بديلاً عن الأدوية، ولكن يمكن استخدامها كمساعد طبيعي فعّال إلى جانب العلاج الطبي لتعزيز صحتك.",
           available: true,
           image: "/image/أغذية صحية/كبسولات تيانز من الكيتوزان.png"
         },
@@ -102,7 +102,7 @@ export const tiensData = {
           ingredients: "مسحوق الكورديسيبس 500 ملغ، مانيتول، وأدينوسين.",
           netContent: "50 جم (100 كبسولة).",
           recommendedPortion: "2 إلى 4 كبسولات يومياً. لا تتجاوز الجرعة.",
-          disclaimer: "*المكملات الغذائية ليست أدوية ولا يمكن استخدامها كبديل لعلاج الأمراض.",
+          disclaimer: "المكملات الغذائية ليست بديلاً عن الأدوية، ولكن يمكن استخدامها كمساعد طبيعي فعّال إلى جانب العلاج الطبي لتعزيز صحتك.",
           available: true,
           image: "/image/أغذية صحية/كبسولات تيانز كورديسيبس.png"
         },
@@ -111,7 +111,7 @@ export const tiensData = {
           subtitle: "TIANSHI LIPID METABOLIC MANAGEMENT TEA",
           desc: "شاي عشبي يدعم التمثيل الغذائي ويساعد في إدارة الوزن وتحسين الهضم.",
           fullDescription: "وفقاً للنظرية الطبية الصينية والأبحاث، يساعد على تنظيم دهون الدم بفضل مكوناته العشبية القوية والشاي الأخضر.",
-          disclaimer: "*المكملات الغذائية ليست أدوية ولا يمكن استخدامها كبديل لعلاج الأمراض.",
+          disclaimer: "المكملات الغذائية ليست بديلاً عن الأدوية، ولكن يمكن استخدامها كمساعد طبيعي فعّال إلى جانب العلاج الطبي لتعزيز صحتك.",
           available: true,
           image: "/image/أغذية صحية/شاي تيانز لإدارة الدهون والتمثيل الغذائي.png"
         },
@@ -129,7 +129,7 @@ export const tiensData = {
           subtitle: "COMPOUND AMINO ACID TABLETS(FOR CHILDREN)",
           desc: "أقراص للمضغ تدعم النمو السليم للأطفال.",
           fullDescription: "معالج من مستخلصات البطاطا وعدة أحماض أساسية مثل فالين، لوسين ليساعد بقوة في تعزيز الخصائص الجسدية.",
-          disclaimer: "*المكملات الغذائية ليست أدوية ولا يمكن استخدامها كبديل لعلاج الأمراض.",
+          disclaimer: "المكملات الغذائية ليست بديلاً عن الأدوية، ولكن يمكن استخدامها كمساعد طبيعي فعّال إلى جانب العلاج الطبي لتعزيز صحتك.",
           available: false,
           image: "/image/أغذية صحية/أقراص الأحماض الأمينية المركبة (للأطفال).png"
         },
@@ -139,18 +139,9 @@ export const tiensData = {
           desc: "أقراص كالسيوم قوية سهلة المضغ لمنح النشاط اليومي.",
           fullDescription: "منتج مكمل للكالسيوم مصنع من كالسيوم عظام إنزيمي نقي مع مسحوق الكاكاو مما يمنحه طعماً جذاباً للأطفال والبالغين.",
           recommendedPortion: "3-5 أقراص يومياً للبالغين، أو 2-3 أقراص يومياً للأطفال (للمضغ).",
-          disclaimer: "*المكملات الغذائية ليست أدوية ولا يمكن استخدامها كبديل لعلاج الأمراض.",
+          disclaimer: "المكملات الغذائية ليست بديلاً عن الأدوية، ولكن يمكن استخدامها كمساعد طبيعي فعّال إلى جانب العلاج الطبي لتعزيز صحتك.",
           available: false,
           image: "/image/أغذية صحية/أقراص الكالسيوم القابلة للمضغ.png"
-        },
-        {
-          name: "فيتامينات ب المتعددة",
-          subtitle: "MULTI VITA-B TABLETS",
-          desc: "مجموعة متكاملة من فيتامينات ب لتنشيط الجسم والأعصاب.",
-          fullDescription: "يحتوي على النياسيناميد وأحماض الفوليك ليصبح مكملاً غنياً لشتى فيتامينات البناء الأساسية.",
-          disclaimer: "*المكملات الغذائية ليست أدوية ولا يمكن استخدامها كبديل لعلاج الأمراض.",
-          available: false,
-          image: "/image/أغذية صحية/أقراص فيتامينات ب المتعددة.png"
         },
         {
           name: "شراب فوس",
@@ -176,7 +167,7 @@ export const tiensData = {
           subtitle: "SUPER SERENE CAPSULES",
           desc: "تساعد في تخفيف التوتر وتحسين جودة النوم.",
           fullDescription: "مستخلصات جذور الكودزو، وفول الصويا. يعزز قوة المناعة ويوفر استرخاء صحي.",
-          disclaimer: "*المكملات الغذائية ليست أدوية ولا يمكن استخدامها كبديل لعلاج الأمراض.",
+          disclaimer: "المكملات الغذائية ليست بديلاً عن الأدوية، ولكن يمكن استخدامها كمساعد طبيعي فعّال إلى جانب العلاج الطبي لتعزيز صحتك.",
           available: false,
           image: "/image/أغذية صحية/كبسولات فائقة الهدوء.png"
         },
@@ -185,7 +176,7 @@ export const tiensData = {
           subtitle: "BENEFICIAL CAPSULES",
           desc: "تساعد في تجديد النشاط الخلوي ومناهضة الشيخوخة.",
           fullDescription: "مستخلصات جزر طبيعي مع شاي أخضر. يساعد في رفع مقاومة الخلايا الطبيعية ضد العوامل المؤكسدة.",
-          disclaimer: "*المكملات الغذائية ليست أدوية ولا يمكن استخدامها كبديل لعلاج الأمراض.",
+          disclaimer: "المكملات الغذائية ليست بديلاً عن الأدوية، ولكن يمكن استخدامها كمساعد طبيعي فعّال إلى جانب العلاج الطبي لتعزيز صحتك.",
           available: false,
           image: "/image/أغذية صحية/كبسولات مفيدة.png"
         },
@@ -195,7 +186,7 @@ export const tiensData = {
           desc: "تركيبة مسحوق كالسيوم خاصة وفعالة.",
           fullDescription: "هذا المنتج معالج أساساً من كالسيوم العظام ومسحوق اليقطين والفيتامينات، وأثبت قدرته في المساعدة على تنظيم سكر الدم. منتج حائز على ميدالية ذهبية.",
           recommendedPortion: "اشرب كيساً واحداً، مرة إلى مرتين يومياً.",
-          disclaimer: "*المكملات الغذائية ليست أدوية ولا يمكن استخدامها كبديل لعلاج الأمراض.",
+          disclaimer: "المكملات الغذائية ليست بديلاً عن الأدوية، ولكن يمكن استخدامها كمساعد طبيعي فعّال إلى جانب العلاج الطبي لتعزيز صحتك.",
           available: false,
           image: "/image/أغذية صحية/مسحوق الكالسيوم من تيان شوتانغ.png"
         },
@@ -388,7 +379,7 @@ export const tiensData = {
           fullDescription: "This product is mainly processed from dried spirulina powder. Functional experiments prove that this product can help to improve hypoxia resistance and regulate cellular immune system.",
           ingredients: "Dried spirulina powder (Arthros piraplatensis), capsule shell: gelatine.",
           recommendedPortion: "2 capsules two three times per day, each time drinking a glass of water.",
-          disclaimer: "*Health food is not a medicine and cannot be used as a substitute for the treatment of diseases.",
+          disclaimer: "Health supplements are not a substitute for medicine, but they can be used as an effective natural aid alongside medical treatment to support your health.",
           available: true,
           image: "/image/أغذية صحية/كبسولات سبيرولينا من تيانز.png"
         },
@@ -400,7 +391,7 @@ export const tiensData = {
           ingredients: "Whole milk powder, calcium hydroxyapatite (calcium salts of orthophosphoric acid), dietary fibre from corn (rich in non-digestible oligosaccharides).",
           netContent: "10g x 10bags",
           recommendedPortion: "1 sachet to be poured into 120 ml of warm water or milk and mixed evenly.",
-          disclaimer: "*Health food is not a medicine and cannot be used as a substitute for the treatment of diseases.",
+          disclaimer: "Health supplements are not a substitute for medicine, but they can be used as an effective natural aid alongside medical treatment to support your health.",
           available: true,
           image: "/image/أغذية صحية/مسحوق الكالسيوم الفائق للأطفال.png"
         },
@@ -410,7 +401,7 @@ export const tiensData = {
           desc: "Supports bone and nervous system health, helps prevent osteoporosis, and enhances brain function.",
           fullDescription: "This product is mainly processed from zymolytic bone calcium powder, lecithin, taurine, VB1, VB12, VC, B-cyclodextrin. Functional experiments prove that this product is good for hypermnesia.",
           recommendedPortion: "3 capsules a day.",
-          disclaimer: "*Health food is not a medicine and cannot be used as a substitute for the treatment of diseases.",
+          disclaimer: "Health supplements are not a substitute for medicine, but they can be used as an effective natural aid alongside medical treatment to support your health.",
           available: false,
           image: "/image/أغذية صحية/كبسولات تيانز سوبر كالسيوم مع الليسيثين.png"
         },
@@ -422,7 +413,7 @@ export const tiensData = {
           ingredients: "Enzymatic hydrolysis of bone calcium powder, isomalto-oligosaccharide (oligosaccharides), skimmed milk powder VA, VD, VC, iron, etc.",
           recommendedPortion: "Drink 1 sachet 1-2 times daily.",
           netContent: "230g",
-          disclaimer: "*Health food is not a medicine and cannot be used as a substitute for the treatment of diseases.",
+          disclaimer: "Health supplements are not a substitute for medicine, but they can be used as an effective natural aid alongside medical treatment to support your health.",
           available: false,
           image: "/image/أغذية صحية/مسحوق الكالسيوم المغذي الفائق.png"
         },
@@ -433,7 +424,7 @@ export const tiensData = {
           fullDescription: "This product is mainly processed from zinc lactate, glucose, egg white powder. This product can help to supplement zinc.",
           ingredients: "Anhydrous glucose, bovine gelatin (hard capsule shell), egg white powder, zinc bisglycinate.",
           recommendedPortion: "Take 2-4 capsules per day after your meals.",
-          disclaimer: "*Health food is not a medicine and cannot be used as a substitute for the treatment of diseases.",
+          disclaimer: "Health supplements are not a substitute for medicine, but they can be used as an effective natural aid alongside medical treatment to support your health.",
           available: true,
           image: "/image/أغذية صحية/كبسولات الزنك.png"
         },
@@ -444,7 +435,7 @@ export const tiensData = {
           fullDescription: "This product is mainly processed from chitosan. Functional experiments prove that this product can develop a healthy immune system.",
           ingredients: "Chitosan (from red crustacean shells), capsule shell: gelatine.",
           recommendedPortion: "Take 2 capsules twice a day, 30-60 minutes before meal.",
-          disclaimer: "*Health food is not a medicine and cannot be used as a substitute for the treatment of diseases.",
+          disclaimer: "Health supplements are not a substitute for medicine, but they can be used as an effective natural aid alongside medical treatment to support your health.",
           available: true,
           image: "/image/أغذية صحية/كبسولات تيانز من الكيتوزان.png"
         },
@@ -456,7 +447,7 @@ export const tiensData = {
           ingredients: "Cordyceps mycelium powder 500 mg (Cordyceps sinensis).",
           netContent: "50g (100 capsules x 500mg).",
           recommendedPortion: "Take 2-4 capsules per day.",
-          disclaimer: "*Health food is not a medicine and cannot be used as a substitute for the treatment of diseases.",
+          disclaimer: "Health supplements are not a substitute for medicine, but they can be used as an effective natural aid alongside medical treatment to support your health.",
           available: true,
           image: "/image/أغذية صحية/كبسولات تيانز كورديسيبس.png"
         },
@@ -465,7 +456,7 @@ export const tiensData = {
           subtitle: "شاي تيانشي لضبط استقلاب الدهون",
           desc: "Herbal tea supports metabolism, helps in weight management and improves digestion.",
           fullDescription: "According to the traditional theory of Chinese medicine, Tianshi Lipid Metabolic Management Tea is processed from herbal gynostemma, green tea and semen cassiae. It regulates blood lipid.",
-          disclaimer: "*Health food is not a medicine and cannot be used as a substitute for the treatment of diseases.",
+          disclaimer: "Health supplements are not a substitute for medicine, but they can be used as an effective natural aid alongside medical treatment to support your health.",
           available: true,
           image: "/image/أغذية صحية/شاي تيانز لإدارة الدهون والتمثيل الغذائي.png"
         },
@@ -483,7 +474,7 @@ export const tiensData = {
           subtitle: "COMPOUND AMINO ACID TABLETS(FOR CHILDREN)",
           desc: "Chewable tablets supporting children's healthy growth.",
           fullDescription: "Processed from poria coia extract, yam extract, L-valine, L-leucine... Animal experiments prove that this product can help to enhance the immune function.",
-          disclaimer: "*Health food is not a medicine and cannot be used as a substitute for the treatment of diseases.",
+          disclaimer: "Health supplements are not a substitute for medicine, but they can be used as an effective natural aid alongside medical treatment to support your health.",
           available: false,
           image: "/image/أغذية صحية/أقراص الأحماض الأمينية المركبة (للأطفال).png"
         },
@@ -493,18 +484,9 @@ export const tiensData = {
           desc: "Calcium tablets easy to chew for daily activity.",
           fullDescription: "Processed from zymolytic bone calcium powder, cocoa powder and etc. This product can help to supplement calcium. Easy to chew.",
           recommendedPortion: "3-5 tablets for adults or 2-3 tablets for children one day, chew.",
-          disclaimer: "*Health food is not a medicine and cannot be used as a substitute for the treatment of diseases.",
+          disclaimer: "Health supplements are not a substitute for medicine, but they can be used as an effective natural aid alongside medical treatment to support your health.",
           available: false,
           image: "/image/أغذية صحية/أقراص الكالسيوم القابلة للمضغ.png"
-        },
-        {
-          name: "Multi B Vitamins",
-          subtitle: "MULTI VITA-B TABLETS",
-          desc: "Comprehensive B-Vitamin complex to energize both body and nerves.",
-          fullDescription: "Health food with nicotinamide, D-calcium pantothenate, thiamine nitrate, folic acid... Can help to supplement a variety of vitamins.",
-          disclaimer: "*Health food is not a medicine and cannot be used as a substitute for the treatment of diseases.",
-          available: false,
-          image: "/image/أغذية صحية/أقراص فيتامينات ب المتعددة.png"
         },
         {
           name: "FOS Syrup",
@@ -530,7 +512,7 @@ export const tiensData = {
           subtitle: "SUPER SERENE CAPSULES",
           desc: "Helps relieve tension and supports good sleep quality.",
           fullDescription: "Mainly formulated with kudzu powder, kudzu extracts, Chinese wolfberry extracts and soybean extracts. Result of tests on animals show improving immunity.",
-          disclaimer: "*Health food is not a medicine and cannot be used as a substitute for the treatment of diseases.",
+          disclaimer: "Health supplements are not a substitute for medicine, but they can be used as an effective natural aid alongside medical treatment to support your health.",
           available: false,
           image: "/image/أغذية صحية/كبسولات فائقة الهدوء.png"
         },
@@ -539,7 +521,7 @@ export const tiensData = {
           subtitle: "BENEFICIAL CAPSULES",
           desc: "Beneficial supplement renewing cellular vitality and combatting aging.",
           fullDescription: "Mainly processed from carrot powder, herba gynostemma pentaphyllum extract, tea polyphenol and Vc. Helps to increase resistance.",
-          disclaimer: "*Health food is not a medicine and cannot be used as a substitute for the treatment of diseases.",
+          disclaimer: "Health supplements are not a substitute for medicine, but they can be used as an effective natural aid alongside medical treatment to support your health.",
           available: false,
           image: "/image/أغذية صحية/كبسولات مفيدة.png"
         },
@@ -549,7 +531,7 @@ export const tiensData = {
           desc: "A special and highly effective calcium formula.",
           fullDescription: "This product is mainly processed from zymolytic bone calcium powder, pumpkin powder, oligosaccharide... Functional experiments prove that this product can help to regulate blood sugar.",
           recommendedPortion: "Drink 1 sachet 1-2 times daily.",
-          disclaimer: "*Health food is not a medicine and cannot be used as a substitute for the treatment of diseases.",
+          disclaimer: "Health supplements are not a substitute for medicine, but they can be used as an effective natural aid alongside medical treatment to support your health.",
           available: false,
           image: "/image/أغذية صحية/مسحوق الكالسيوم من تيان شوتانغ.png"
         },
