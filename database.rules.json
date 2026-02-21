@@ -1,0 +1,26 @@
+{
+    "rules": {
+        "inventory": {
+            ".read": true,
+            ".write": "auth !== null && root.child('admins').child(auth.uid).val() === true",
+            "$product": {
+                ".validate": "newData.isBoolean()"
+            }
+        },
+        "prices": {
+            ".read": true,
+            ".write": "auth !== null && root.child('admins').child(auth.uid).val() === true",
+            "$product": {
+                ".validate": "newData.isNumber() && newData.val() >= 0"
+            }
+        },
+        "admins": {
+            ".read": false,
+            ".write": false
+        },
+        "$other": {
+            ".read": false,
+            ".write": false
+        }
+    }
+}

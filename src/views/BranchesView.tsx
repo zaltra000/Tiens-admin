@@ -23,7 +23,7 @@ export default function BranchesView() {
   });
 
   return (
-    <div className="pb-32 pt-24 px-4 h-full flex flex-col max-w-lg mx-auto">
+    <div className="pb-32 pt-28 px-4 h-full flex flex-col max-w-lg mx-auto">
       <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 px-1 transition-colors duration-500">{t("branches")}</h2>
 
       {/* Search & Filter */}
