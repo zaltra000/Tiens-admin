@@ -137,7 +137,7 @@ export default function ShopView() {
     };
 
     return (
-        <div className="pb-32 pt-20 px-4 h-full flex flex-col max-w-5xl mx-auto">
+        <div className="pb-32 pt-24 px-4 h-full flex flex-col max-w-5xl mx-auto">
             {/* Header */}
             <div className="mb-6 px-1 flex items-center justify-between">
                 <div>

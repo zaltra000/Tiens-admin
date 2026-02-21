@@ -9,21 +9,21 @@ export default function BranchesView() {
   const { t, i18n } = useTranslation();
   const lang = i18n.language as "ar" | "en";
   const branches = tiensData[lang].branches;
-  
+
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedState, setSelectedState] = useState("All");
 
   const states = ["All", ...new Set(branches.map(b => b.state))];
 
   const filteredBranches = branches.filter(branch => {
-    const matchesSearch = branch.city.toLowerCase().includes(searchTerm.toLowerCase()) || 
-                          branch.location.toLowerCase().includes(searchTerm.toLowerCase());
+    const matchesSearch = branch.city.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      branch.location.toLowerCase().includes(searchTerm.toLowerCase());
     const matchesState = selectedState === "All" || branch.state === selectedState;
     return matchesSearch && matchesState;
   });
 
   return (
-    <div className="pb-24 pt-20 px-4 h-full flex flex-col max-w-lg mx-auto">
+    <div className="pb-32 pt-24 px-4 h-full flex flex-col max-w-lg mx-auto">
       <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6 px-1 transition-colors duration-500">{t("branches")}</h2>
 
       {/* Search & Filter */}
@@ -85,7 +85,7 @@ export default function BranchesView() {
             </motion.div>
           ))}
         </AnimatePresence>
-        
+
         {filteredBranches.length === 0 && (
           <div className="text-center py-12 text-gray-400 dark:text-zinc-500 transition-colors duration-500">
             <div className="w-16 h-16 bg-gray-100 dark:bg-zinc-900 rounded-full flex items-center justify-center mx-auto mb-4 transition-colors duration-500">

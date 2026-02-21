@@ -47,7 +47,7 @@ export default function InquiryView() {
 
   if (isSubmitted) {
     return (
-      <div className="h-full flex flex-col items-center justify-center px-8 pb-24 pt-20 text-center max-w-lg mx-auto">
+      <div className="h-full flex flex-col items-center justify-center px-8 pb-32 pt-24 text-center max-w-lg mx-auto">
         <motion.div
           initial={{ scale: 0 }}
           animate={{ scale: 1, rotate: 360 }}
@@ -73,7 +73,7 @@ export default function InquiryView() {
   }
 
   return (
-    <div className="pb-24 pt-20 px-4 h-full flex flex-col max-w-lg mx-auto">
+    <div className="pb-32 pt-24 px-4 h-full flex flex-col max-w-lg mx-auto">
       <div className="mb-8 px-1">
         <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-2 transition-colors duration-500">{t("inquiry")}</h2>
         <p className="text-gray-500 dark:text-zinc-400 text-sm transition-colors duration-500">{t("inquirySubtitle")}</p>

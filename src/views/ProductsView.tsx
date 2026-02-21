@@ -63,7 +63,7 @@ export default function ProductsView() {
   const hasItems = filteredProducts.length > 0;
 
   return (
-    <div className="pb-24 pt-20 px-4 h-full flex flex-col max-w-lg mx-auto">
+    <div className="pb-32 pt-24 px-4 h-full flex flex-col max-w-lg mx-auto">
       <div className="mb-6 px-1">
         <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2 transition-colors duration-500">{t("products")}</h2>
         <p className="text-xs text-gray-500 dark:text-zinc-400 leading-relaxed transition-colors duration-500">

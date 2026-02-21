@@ -25,7 +25,7 @@ export default function HomeView({ onChangeView }: { onChangeView: (view: string
       variants={container}
       initial="hidden"
       animate="show"
-      className="pb-28 pt-20 px-4 space-y-12 max-w-2xl mx-auto"
+      className="pb-32 pt-24 px-4 space-y-12 max-w-2xl mx-auto"
     >
       {/* Hero Section */}
       <motion.div
