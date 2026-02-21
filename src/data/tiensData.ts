@@ -57,7 +57,7 @@ export const tiensData = {
           fullDescription: "معالج من مسحوق كالسيوم العظام، الليسيثين، التورين، وفيتامينات بي. أثبتت التجارب فعاليته في تحسين الذاكرة ودعم وظائف الدماغ بفعالية فائقة.",
           recommendedPortion: "3 كبسولات يوميًا.",
           disclaimer: "*المكملات الغذائية ليست أدوية ولا يمكن استخدامها كبديل لعلاج الأمراض.",
-          available: true,
+          available: false,
           image: "/image/أغذية صحية/كبسولات تيانز سوبر كالسيوم مع الليسيثين.png"
         },
         {
@@ -69,7 +69,7 @@ export const tiensData = {
           recommendedPortion: "اشرب كيساً واحداً، مرة إلى مرتين يومياً.",
           netContent: "230 جم",
           disclaimer: "*المكملات الغذائية ليست أدوية ولا يمكن استخدامها كبديل لعلاج الأمراض.",
-          available: true,
+          available: false,
           image: "/image/أغذية صحية/مسحوق الكالسيوم المغذي الفائق.png"
         },
         {
@@ -411,7 +411,7 @@ export const tiensData = {
           fullDescription: "This product is mainly processed from zymolytic bone calcium powder, lecithin, taurine, VB1, VB12, VC, B-cyclodextrin. Functional experiments prove that this product is good for hypermnesia.",
           recommendedPortion: "3 capsules a day.",
           disclaimer: "*Health food is not a medicine and cannot be used as a substitute for the treatment of diseases.",
-          available: true,
+          available: false,
           image: "/image/أغذية صحية/كبسولات تيانز سوبر كالسيوم مع الليسيثين.png"
         },
         {
@@ -423,7 +423,7 @@ export const tiensData = {
           recommendedPortion: "Drink 1 sachet 1-2 times daily.",
           netContent: "230g",
           disclaimer: "*Health food is not a medicine and cannot be used as a substitute for the treatment of diseases.",
-          available: true,
+          available: false,
           image: "/image/أغذية صحية/مسحوق الكالسيوم المغذي الفائق.png"
         },
         {
