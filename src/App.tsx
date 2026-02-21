@@ -18,6 +18,8 @@ import InquiryView from "@/views/InquiryView";
 import SplashScreen from "@/components/SplashScreen";
 import { Globe } from "lucide-react";
 import "@/i18n";
+import { StatusBar } from '@capacitor/status-bar';
+import { Capacitor } from '@capacitor/core';
 
 export default function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -27,6 +29,13 @@ export default function App() {
   const [isChangingLanguage, setIsChangingLanguage] = useState(false);
   const [targetLang, setTargetLang] = useState("");
   const { i18n } = useTranslation();
+
+  // Hide StatusBar on native mobile
+  useEffect(() => {
+    if (Capacitor.isNativePlatform()) {
+      StatusBar.hide().catch(console.error);
+    }
+  }, []);
 
   // Initialize dark mode from localStorage or system preference
   useEffect(() => {

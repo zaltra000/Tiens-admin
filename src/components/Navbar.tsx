@@ -24,7 +24,10 @@ export default function Navbar({ currentView, onChangeView }: NavbarProps) {
       {/* Gradient fade to transparent at bottom to blend with safe area */}
       <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-white dark:from-zinc-950 via-white/90 dark:via-zinc-950/90 to-transparent pointer-events-none transition-colors duration-500" />
 
-      <div className="relative bg-white/80 dark:bg-zinc-900/80 backdrop-blur-xl border-t border-white/20 dark:border-zinc-800/50 shadow-[0_-8px_30px_rgba(0,0,0,0.04)] dark:shadow-[0_-8px_30px_rgba(0,0,0,0.2)] pb-safe transition-colors duration-500">
+      <div
+        className="relative bg-white/80 dark:bg-zinc-900/80 backdrop-blur-xl border-t border-white/20 dark:border-zinc-800/50 shadow-[0_-8px_30px_rgba(0,0,0,0.04)] dark:shadow-[0_-8px_30px_rgba(0,0,0,0.2)] transition-colors duration-500"
+        style={{ paddingBottom: 'env(safe-area-inset-bottom, 0px)' }}
+      >
         <div className="flex justify-around items-center h-20 max-w-lg mx-auto px-2">
           {navItems.map((item) => {
             const isActive = currentView === item.id;

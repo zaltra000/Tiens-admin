@@ -80,7 +80,7 @@ export default function HomeView({ onChangeView }: { onChangeView: (view: string
           <div className="bg-white dark:bg-zinc-900 rounded-[2rem] shadow-xl border border-gray-100 dark:border-zinc-800 overflow-hidden">
             <div className="aspect-[4/3] sm:aspect-[16/9] w-full relative bg-gray-100 dark:bg-zinc-800">
               <img
-                src="/image/مؤسس المجموعة/ljy.png"
+                src="/image/founder/ljy.png"
                 alt="Li Jinyuan, Chairman of Tiens Group"
                 className="w-full h-full object-cover object-top"
               />
