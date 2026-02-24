@@ -6,9 +6,10 @@ import { APP_VERSION } from "@/lib/firebase";
 
 interface UpdateScreenProps {
     updateInfo: AppUpdateInfo;
+    onDismiss: () => void; // أضفنا هذا السطر لاستقبال أمر الإغلاق
 }
 
-export default function UpdateScreen({ updateInfo }: UpdateScreenProps) {
+export default function UpdateScreen({ updateInfo, onDismiss }: UpdateScreenProps) {
     const { t, i18n } = useTranslation();
     const lang = i18n.language as "ar" | "en";
     const changelog = lang === "ar" ? updateInfo.changelog_ar : updateInfo.changelog_en;
@@ -103,15 +104,25 @@ export default function UpdateScreen({ updateInfo }: UpdateScreenProps) {
                     <motion.button
                         whileTap={{ scale: 0.95 }}
                         onClick={handleDownload}
-                        className="w-full flex items-center justify-center gap-3 bg-gradient-to-r from-tiens-primary to-emerald-600 text-white py-4 px-8 rounded-2xl font-black text-sm shadow-lg shadow-tiens-primary/30 active:shadow-md transition-shadow"
+                        className="w-full flex items-center justify-center gap-3 bg-gradient-to-r from-tiens-primary to-emerald-600 text-white py-4 px-8 rounded-2xl font-black text-sm shadow-lg shadow-tiens-primary/30 active:shadow-md transition-shadow mb-3"
                     >
                         <Download className="w-5 h-5" />
                         {t("downloadUpdate")}
                     </motion.button>
 
-                    <p className="text-[11px] text-gray-400 dark:text-zinc-500 mt-4 leading-relaxed">
-                        {t("updateRequired")}
-                    </p>
+                    {/* الزر الجديد: يظهر فقط إذا كان التحديث غير إجباري */}
+                    {!updateInfo.force_update ? (
+                        <button
+                            onClick={onDismiss}
+                            className="w-full py-3 rounded-2xl font-bold text-sm text-gray-500 dark:text-zinc-400 hover:bg-gray-50 dark:hover:bg-zinc-800 transition-colors"
+                        >
+                            {t("updateLater")}
+                        </button>
+                    ) : (
+                        <p className="text-[11px] text-gray-400 dark:text-zinc-500 mt-2 leading-relaxed">
+                            {t("updateRequired")}
+                        </p>
+                    )}
                 </div>
             </motion.div>
         </motion.div>
