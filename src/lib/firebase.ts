@@ -74,7 +74,7 @@ export const subscribeToPrices = (callback: (priceMap: Record<string, number>) =
 };
 
 // Current app version — must match package.json
-export const APP_VERSION = "1.0.1";
+export const APP_VERSION = "1.0.2";
 
 export interface AppUpdateInfo {
     latest_version: string;
