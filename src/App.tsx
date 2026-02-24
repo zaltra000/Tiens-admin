@@ -39,12 +39,11 @@ export default function App() {
       StatusBar.hide().catch(console.error);
     }
   }, []);
-
-  // Check for app updates after splash screen
+// Check for app updates after splash screen
   useEffect(() => {
     if (!showSplash) {
       checkForUpdate().then(info => {
-        if (info && info.force_update) {
+        if (info) { // إزالة شرط force_update ليظهر التحديث في كل الأحوال
           setUpdateInfo(info);
         }
       });
