@@ -59,7 +59,8 @@ const resources = {
       "whatsNew": "What's New",
       "updateSize": "Download Size",
       "downloadUpdate": "Download Update",
-      "updateRequired": "Please download and install the latest version to continue using the app."
+      "updateRequired": "Please download and install the latest version to continue using the app.",
+      "updateLater": "Skip for now"
     }
   },
   ar: {
@@ -120,7 +121,8 @@ const resources = {
       "whatsNew": "ما الجديد",
       "updateSize": "حجم التحديث",
       "downloadUpdate": "تحميل التحديث",
-      "updateRequired": "يرجى تحميل وتثبيت أحدث إصدار للاستمرار في استخدام التطبيق."
+      "updateRequired": "يرجى تحميل وتثبيت أحدث إصدار للاستمرار في استخدام التطبيق.",
+      "updateLater": "تخطي / التحديث لاحقاً"
     }
   }
 };
