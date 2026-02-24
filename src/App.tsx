@@ -39,11 +39,13 @@ export default function App() {
       StatusBar.hide().catch(console.error);
     }
   }, []);
-// Check for app updates after splash screen
+
+  // Check for app updates after splash screen
   useEffect(() => {
     if (!showSplash) {
       checkForUpdate().then(info => {
-        if (info) { // إزالة شرط force_update ليظهر التحديث في كل الأحوال
+        // تم التعديل هنا: سيعرض شاشة التحديث سواء كان إجبارياً أو اختيارياً
+        if (info) {
           setUpdateInfo(info);
         }
       });
@@ -120,7 +122,9 @@ export default function App() {
   return (
     <div className={`min-h-screen bg-bg-soft dark:bg-zinc-950 font-sans ${i18n.language === 'ar' ? 'font-cairo' : 'font-sans'} text-gray-800 dark:text-zinc-100 selection:bg-tiens-primary/20 transition-colors duration-500`}>
       {showSplash && <SplashScreen onComplete={() => setShowSplash(false)} />}
-      {updateInfo && <UpdateScreen updateInfo={updateInfo} />}
+      
+      {/* تم التعديل هنا: تمرير خاصية onDismiss لإغلاق الشاشة إذا كان التحديث اختيارياً */}
+      {updateInfo && <UpdateScreen updateInfo={updateInfo} onDismiss={() => setUpdateInfo(null)} />}
 
       <AnimatePresence>
         {isChangingLanguage && (
