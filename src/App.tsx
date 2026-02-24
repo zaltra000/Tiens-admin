@@ -44,7 +44,6 @@ export default function App() {
   useEffect(() => {
     if (!showSplash) {
       checkForUpdate().then(info => {
-        // تم التعديل هنا: سيعرض شاشة التحديث سواء كان إجبارياً أو اختيارياً
         if (info) {
           setUpdateInfo(info);
         }
@@ -89,15 +88,15 @@ export default function App() {
     setTargetLang(newLang);
     setIsChangingLanguage(true);
 
-    // Wait for the overlay to slide up
-    await new Promise(resolve => setTimeout(resolve, 400));
+    // ننتظر قليلاً لكي يستمتع المستخدم برؤية الأنيميشن الجديد
+    await new Promise(resolve => setTimeout(resolve, 600));
 
     await i18n.changeLanguage(newLang);
     document.documentElement.dir = newLang === "ar" ? "rtl" : "ltr";
     document.documentElement.lang = newLang;
 
-    // Wait a moment so the user sees the loading state briefly
-    await new Promise(resolve => setTimeout(resolve, 400));
+    // ننتظر قليلاً قبل إخفاء الشاشة
+    await new Promise(resolve => setTimeout(resolve, 600));
 
     setIsChangingLanguage(false);
   };
@@ -123,34 +122,50 @@ export default function App() {
     <div className={`min-h-screen bg-bg-soft dark:bg-zinc-950 font-sans ${i18n.language === 'ar' ? 'font-cairo' : 'font-sans'} text-gray-800 dark:text-zinc-100 selection:bg-tiens-primary/20 transition-colors duration-500`}>
       {showSplash && <SplashScreen onComplete={() => setShowSplash(false)} />}
       
-      {/* تم التعديل هنا: تمرير خاصية onDismiss لإغلاق الشاشة إذا كان التحديث اختيارياً */}
       {updateInfo && <UpdateScreen updateInfo={updateInfo} onDismiss={() => setUpdateInfo(null)} />}
 
       <AnimatePresence>
         {isChangingLanguage && (
           <motion.div
-            initial={{ y: "100%", borderTopLeftRadius: "100%", borderTopRightRadius: "100%" }}
-            animate={{ y: 0, borderTopLeftRadius: "0%", borderTopRightRadius: "0%" }}
-            exit={{ y: "-100%", borderBottomLeftRadius: "100%", borderBottomRightRadius: "100%" }}
-            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-            className="fixed inset-0 z-[100] bg-tiens-primary dark:bg-tiens-primary-dark flex items-center justify-center shadow-2xl"
+            initial={{ opacity: 0, backdropFilter: "blur(0px)" }}
+            animate={{ opacity: 1, backdropFilter: "blur(8px)" }}
+            exit={{ opacity: 0, backdropFilter: "blur(0px)" }}
+            transition={{ duration: 0.3 }}
+            className="fixed inset-0 z-[150] bg-black/40 dark:bg-black/70 flex items-center justify-center p-6"
           >
             <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.8 }}
-              transition={{ delay: 0.2, duration: 0.3 }}
-              className="text-white flex flex-col items-center"
+              initial={{ scale: 0.8, opacity: 0, y: 20 }}
+              animate={{ scale: 1, opacity: 1, y: 0 }}
+              exit={{ scale: 0.8, opacity: 0, y: 20 }}
+              transition={{ type: "spring", stiffness: 300, damping: 25 }}
+              className="relative w-full max-w-[18rem] bg-white dark:bg-zinc-900 rounded-[2rem] p-8 flex flex-col items-center shadow-2xl overflow-hidden"
             >
+              {/* إضاءات خلفية جمالية */}
+              <div className="absolute top-0 right-0 w-32 h-32 bg-tiens-primary/10 rounded-full blur-2xl -mr-16 -mt-16" />
+              <div className="absolute bottom-0 left-0 w-32 h-32 bg-emerald-500/10 rounded-full blur-2xl -ml-16 -mb-16" />
+
               <motion.div
                 animate={{ rotate: 360 }}
-                transition={{ repeat: Infinity, duration: 2, ease: "linear" }}
+                transition={{ repeat: Infinity, duration: 2.5, ease: "linear" }}
+                className="relative w-20 h-20 mb-5 flex items-center justify-center rounded-3xl bg-gradient-to-br from-tiens-primary/15 to-emerald-100 dark:from-tiens-primary/20 dark:to-emerald-900/30 border border-white/50 dark:border-white/5 shadow-inner"
               >
-                <Globe className="w-16 h-16 mb-6 opacity-90" />
+                <Globe className="w-10 h-10 text-tiens-primary dark:text-tiens-primary-light" />
               </motion.div>
-              <h2 className="text-3xl font-bold font-cairo tracking-wide">
-                {targetLang === 'en' ? 'Switching to English...' : 'جاري التبديل للعربية...'}
+
+              <h2 className="text-xl font-bold text-gray-800 dark:text-white text-center font-cairo mb-3">
+                {targetLang === 'en' ? 'Changing Language' : 'جاري تغيير اللغة'}
               </h2>
+              
+              {/* نقاط تحميل متحركة */}
+              <motion.div 
+                animate={{ opacity: [0.3, 1, 0.3] }}
+                transition={{ repeat: Infinity, duration: 1.5 }}
+                className="flex gap-2 items-center"
+              >
+                <div className="w-2 h-2 rounded-full bg-tiens-primary" />
+                <div className="w-2 h-2 rounded-full bg-tiens-accent" />
+                <div className="w-2 h-2 rounded-full bg-emerald-500" />
+              </motion.div>
             </motion.div>
           </motion.div>
         )}
