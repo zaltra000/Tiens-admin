@@ -72,3 +72,48 @@ export const subscribeToPrices = (callback: (priceMap: Record<string, number>) =
 
     return unsubscribe;
 };
+
+// Current app version — must match package.json
+export const APP_VERSION = "1.0.0";
+
+export interface AppUpdateInfo {
+    latest_version: string;
+    apk_url: string;
+    apk_size_mb: string;
+    force_update: boolean;
+    changelog_ar?: string;
+    changelog_en?: string;
+}
+
+/**
+ * Check Firebase for a newer app version.
+ * Returns AppUpdateInfo if an update is available, or null if up-to-date / offline.
+ */
+export const checkForUpdate = async (): Promise<AppUpdateInfo | null> => {
+    if (!database) return null;
+
+    try {
+        const configRef = ref(database, 'app_config');
+        const snapshot = await get(configRef);
+        const data = snapshot.val() as AppUpdateInfo | null;
+
+        if (!data || !data.latest_version) return null;
+
+        // Compare versions: split by "." and compare each segment
+        const current = APP_VERSION.split('.').map(Number);
+        const latest = data.latest_version.split('.').map(Number);
+
+        let needsUpdate = false;
+        for (let i = 0; i < Math.max(current.length, latest.length); i++) {
+            const c = current[i] || 0;
+            const l = latest[i] || 0;
+            if (l > c) { needsUpdate = true; break; }
+            if (l < c) break;
+        }
+
+        return needsUpdate ? data : null;
+    } catch (error) {
+        console.error("Update check failed:", error);
+        return null;
+    }
+};

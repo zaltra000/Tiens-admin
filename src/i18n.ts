@@ -54,7 +54,12 @@ const resources = {
       "founderMessageTxt": "Since childhood, I had a dream: to use my efforts to enhance the happiness and health of more people. We have remained true to our original aspirations and led Tiens forward in the health industry, providing high-quality health products and a happy life for our consumers across 224 countries.",
       "founderName": "Li Jinyuan, Chairman of Tiens Group",
       "companyOverviewTitle": "A Global Leader in Comprehensive Health",
-      "companyOverviewTxt": "Tiens Group is a multinational enterprise operating in the comprehensive health sector, including dietary supplements, personal care, and beauty products. Since the 1990s, we have expanded globally, focusing on the seamless integration of nature and cutting-edge technology to serve millions of families worldwide."
+      "companyOverviewTxt": "Tiens Group is a multinational enterprise operating in the comprehensive health sector, including dietary supplements, personal care, and beauty products. Since the 1990s, we have expanded globally, focusing on the seamless integration of nature and cutting-edge technology to serve millions of families worldwide.",
+      "updateAvailable": "Update Available",
+      "whatsNew": "What's New",
+      "updateSize": "Download Size",
+      "downloadUpdate": "Download Update",
+      "updateRequired": "Please download and install the latest version to continue using the app."
     }
   },
   ar: {
@@ -110,7 +115,12 @@ const resources = {
       "founderMessageTxt": "منذ طفولتي، كان لدي حلم: أن أستخدم جهودي لتعزيز السعادة والصحة للمزيد من الناس. لقد بقينا أوفياء لتطلعاتنا الأصلية وقدنا تينز إلى الأمام في مجال الصحة، لتقديم منتجات صحية عالية الجودة وحياة سعيدة لمستهلكينا في 224 دولة.",
       "founderName": "لي جينيوان، رئيس مجلس إدارة مجموعة تينز",
       "companyOverviewTitle": "رائد عالمي في قطاع الصحة الشاملة",
-      "companyOverviewTxt": "مجموعة تينز هي مؤسسة متعددة الجنسيات تعمل في قطاع الصحة الشاملة، بما في ذلك المكملات الغذائية، العناية الشخصية، ومنتجات التجميل. منذ التسعينيات، توسعنا عالمياً مع التركيز على التكامل السلس بين الطبيعة والتكنولوجيا المتطورة لخدمة ملايين العائلات حول العالم."
+      "companyOverviewTxt": "مجموعة تينز هي مؤسسة متعددة الجنسيات تعمل في قطاع الصحة الشاملة، بما في ذلك المكملات الغذائية، العناية الشخصية، ومنتجات التجميل. منذ التسعينيات، توسعنا عالمياً مع التركيز على التكامل السلس بين الطبيعة والتكنولوجيا المتطورة لخدمة ملايين العائلات حول العالم.",
+      "updateAvailable": "تحديث متوفر",
+      "whatsNew": "ما الجديد",
+      "updateSize": "حجم التحديث",
+      "downloadUpdate": "تحميل التحديث",
+      "updateRequired": "يرجى تحميل وتثبيت أحدث إصدار للاستمرار في استخدام التطبيق."
     }
   }
 };

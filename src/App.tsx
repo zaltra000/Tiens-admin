@@ -16,10 +16,12 @@ import ProductsView from "@/views/ProductsView";
 import ShopView from "@/views/ShopView";
 import InquiryView from "@/views/InquiryView";
 import SplashScreen from "@/components/SplashScreen";
+import UpdateScreen from "@/components/UpdateScreen";
 import { Globe } from "lucide-react";
 import "@/i18n";
 import { StatusBar } from '@capacitor/status-bar';
 import { Capacitor } from '@capacitor/core';
+import { checkForUpdate, type AppUpdateInfo } from '@/lib/firebase';
 
 export default function App() {
   const [showSplash, setShowSplash] = useState(true);
@@ -28,6 +30,7 @@ export default function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [isChangingLanguage, setIsChangingLanguage] = useState(false);
   const [targetLang, setTargetLang] = useState("");
+  const [updateInfo, setUpdateInfo] = useState<AppUpdateInfo | null>(null);
   const { i18n } = useTranslation();
 
   // Hide StatusBar on native mobile
@@ -36,6 +39,17 @@ export default function App() {
       StatusBar.hide().catch(console.error);
     }
   }, []);
+
+  // Check for app updates after splash screen
+  useEffect(() => {
+    if (!showSplash) {
+      checkForUpdate().then(info => {
+        if (info && info.force_update) {
+          setUpdateInfo(info);
+        }
+      });
+    }
+  }, [showSplash]);
 
   // Initialize dark mode from localStorage or system preference
   useEffect(() => {
@@ -107,6 +121,7 @@ export default function App() {
   return (
     <div className={`min-h-screen bg-bg-soft dark:bg-zinc-950 font-sans ${i18n.language === 'ar' ? 'font-cairo' : 'font-sans'} text-gray-800 dark:text-zinc-100 selection:bg-tiens-primary/20 transition-colors duration-500`}>
       {showSplash && <SplashScreen onComplete={() => setShowSplash(false)} />}
+      {updateInfo && <UpdateScreen updateInfo={updateInfo} />}
 
       <AnimatePresence>
         {isChangingLanguage && (
