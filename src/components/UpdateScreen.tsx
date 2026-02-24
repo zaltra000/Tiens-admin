@@ -6,7 +6,7 @@ import { APP_VERSION } from "@/lib/firebase";
 
 interface UpdateScreenProps {
     updateInfo: AppUpdateInfo;
-    onDismiss: () => void; // أضفنا هذا السطر لاستقبال أمر الإغلاق
+    onDismiss: () => void;
 }
 
 export default function UpdateScreen({ updateInfo, onDismiss }: UpdateScreenProps) {
@@ -110,7 +110,7 @@ export default function UpdateScreen({ updateInfo, onDismiss }: UpdateScreenProp
                         {t("downloadUpdate")}
                     </motion.button>
 
-                    {/* الزر الجديد: يظهر فقط إذا كان التحديث غير إجباري */}
+                    {/* زر التخطي الجديد يظهر فقط إذا كان التحديث غير إجباري */}
                     {!updateInfo.force_update ? (
                         <button
                             onClick={onDismiss}
