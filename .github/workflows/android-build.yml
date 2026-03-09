@@ -37,12 +37,12 @@ jobs:
       - name: Build web app
         run: npm run build
 
-      - name: Setup JDK 17
+      - name: Setup JDK 17 (for Android build)
+        if: ${{ hashFiles('android/gradlew') != '' }}
         uses: actions/setup-java@v4
         with:
           distribution: "temurin"
           java-version: "17"
-          cache: "gradle"
 
       - name: Make Gradle wrapper executable
         if: ${{ hashFiles('android/gradlew') != '' }}
